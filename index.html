@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>EDAI LOGIN PAGE</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" />
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous" />
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+  <div class="box-form">
+    <div class="left">
+      <div class="overlay">
+        <h1>Welcome to Wallet Wizard - <br> Your Finance Navigator</h1>
+
+        <span>
+          <p>Take control of your finances like never before with our powerful and intuitive financial <br> management platform. We're here to help you make informed decisions about your money, <br> empowering you to achieve your financial goals.</p>
+          <p id="social">Login with social media</p>
+          <a href="#" onclick="loginWithGoogle()">
+            <i class="fa fa-google" aria-hidden="true"> Sign in with Google</i>
+          </a> <br>
+          <a href="#"> 
+            <i class="fa fa-twitter" aria-hidden="true"></i> Login with Twitter
+          </a>
+        </span>
+      </div>
+    </div>
+    <div class="right">
+      <h5>Login</h5>
+      <p>Don't have an account? <a href="#" onclick="redirectToCreateAccount()">Create Your Account</a> it takes less than a minute</p>
+
+      <div class="inputs">
+        <input type="text" id="username" placeholder="Username" required />
+        <br />
+        <div style="position: relative;">
+          <input type="password" id="password" placeholder="Password" required />
+          <i id="eye-icon" class="fa fa-eye-slash" onclick="togglePassword()"></i>
+        </div>
+      </div>
+      <br />
+      <div class="remember-me--forget-password">
+        <!-- <label>
+          <input type="checkbox" name="item" checked />
+          <span class="text-checkbox">Remember me</span>
+        </label> -->
+        <a href>
+         <p>Forget password?</p></a>
+      </div>
+      <button type="button" onclick="login()">Login</button>
+    </div>
+  </div>
+  
+  <script src="login.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
+
+<script type='module' src='https://new-interface-ea73fa.zapier.app/'></script>
+
+</body>
+</html>
